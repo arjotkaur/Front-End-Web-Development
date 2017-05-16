@@ -1,0 +1,27 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #f4a460;
+    font-weight: 300;
+ }
+
+.text-thin {
+    font-weight: 100;
+ }
+
+.text-muted {
+    color: #e4a153;
+ }
+
+.title-logo {
+    margin-top: 20px;
+ }
+
+.title-super {
+    font-size: 60px;
+}
+
+.imgmiddle {
+    width: 330px;
+    height: auto;
+}
