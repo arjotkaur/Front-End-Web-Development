@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Malls</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <ul id="slide-out" class="side-nav">
+        <li><input class="searchBar" type="search" placeholder="Choose mall" data-bind="value: searchQuery, valueUpdate: 'keyup'"></li>
+        <ul class="mallList" data-bind="foreach : list">
+            <li class="names" data-bind="text : $data , click : open"></li>
+        </ul>
+    </ul>
+    <header>
+        <div class="row">
+
+            <div class="col s2" id="abc"><a data-activates="slide-out" class=" btn button-collapse btn-floating pulse"><i class="material-icons">menu</i></a></div>
+            <div class="col s7">
+                <h1 class="deco">Shopping Malls Mumbai</h1>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </header>
+    <div id="map"></div>
+    <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="js/knockout-3.2.0.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <script src="js/app.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbdzvmPRIBeJ7pK1dFWcBW0fDrgrraOrA&callback=jaipurMap" onerror="if_map_Not_work()">
+        </script>
+        <script type="text/javascript"></script>
+    </footer>
+</body>
+
+</html>
